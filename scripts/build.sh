@@ -48,7 +48,7 @@ sed -i "s/DOMAIN=.*/DOMAIN=${EXTERNAL_IPv4}/" .env
 
 echo ""
 echo "# recreating docker-compose.yml"
-./scripts/generate-compose
+./scripts/generate-compose.sh
 
 echo ""
 echo "# rebuilding images"

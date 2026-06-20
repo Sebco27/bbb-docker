@@ -53,7 +53,8 @@ echo "# recreating docker-compose.yml"
 echo ""
 echo "# rebuilding images"
 docker compose build
-
+sleep 1
+docker compose up -d
 
 echo ""
 echo "============================================"
@@ -65,6 +66,3 @@ echo "Check containers:     docker-compose ps"
 echo "Rebuilding container: docker-compose up --build CONTAINERNAME"
 echo "============================================"
 
-sleep 1
-
-docker compose up

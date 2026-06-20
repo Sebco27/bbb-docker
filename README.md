@@ -1,6 +1,7 @@
 # 📦 BigBlueButton Docker 🐋
 
 Version: 3.0.23
+Minimal implementation containing only the necessary files to satisfy the requirements of the second project of the IC-7602 course at TEC for the second Semester of 2026.
 
 ## Features
 - Easy installation
@@ -22,5 +23,5 @@ Version: 3.0.23
    cd bbb-docker
    ./scripts/build.sh
    ```
-3. Use API Mate with the link presented in the console to create & join a conference
+4. Use API Mate with the link presented in the console to create & join a conference
 

@@ -45,6 +45,8 @@ echo "The IP of this machine in the local network seems to be"
 echo "   $EXTERNAL_IPv4"
 sed -i "s/EXTERNAL_IPv4=.*/EXTERNAL_IPv4=${EXTERNAL_IPv4}/" .env
 sed -i "s/DOMAIN=.*/DOMAIN=${EXTERNAL_IPv4}/" .env
+sed -i "s/EXTERNAL_IPv4=.*/EXTERNAL_IPv4=${EXTERNAL_IPv4}/" dev.env
+sed -i "s/DOMAIN=.*/DOMAIN=${EXTERNAL_IPv4}/" dev.env
 
 echo ""
 echo "# recreating docker-compose.yml"

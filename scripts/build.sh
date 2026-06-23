@@ -55,16 +55,3 @@ echo "# recreating docker-compose.yml"
 echo ""
 echo "# rebuilding images"
 docker compose build
-sleep 1
-docker compose up -d
-
-echo ""
-echo "============================================"
-echo "BBB Development server"
-echo "============================================"
-echo "API Mate: https://mconf.github.io/api-mate/#server=https://${EXTERNAL_IPv4}/bigbluebutton/api&sharedSecret=SuperSecret"
-echo "Greenlight: https://${EXTERNAL_IPv4}/"
-echo "Check containers:     docker-compose ps"
-echo "Rebuilding container: docker-compose up --build CONTAINERNAME"
-echo "============================================"
-
